@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gevoul/screens/home/home_screen.dart';
-import 'constants.dart';
+import 'core/constants.dart';
 
 void main() {
   runApp(const MyApp());
