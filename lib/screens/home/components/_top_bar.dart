@@ -28,7 +28,7 @@ class TopBar extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Votre position actuelle',
+                'Notre site de carrière',
                 style: TextStyle(fontSize: 12, color: Colors.grey),
               ),
               Row(
@@ -36,7 +36,7 @@ class TopBar extends StatelessWidget {
                   Icon(Icons.location_on, color: Colors.green, size: 16),
                   SizedBox(width: 5),
                   Text(
-                    'PK17, Cameroun',
+                    'Kribi, Cameroun',
                     style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
                   ),
                 ],
