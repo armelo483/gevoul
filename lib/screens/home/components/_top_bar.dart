@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class TopBar extends StatelessWidget {
-  const TopBar({Key? key}) : super(key: key);
+  const TopBar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -27,11 +27,13 @@ class TopBar extends StatelessWidget {
           const Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              Expanded(
+                  child: Text(
                 'Notre site de carrière',
                 style: TextStyle(fontSize: 12, color: Colors.grey),
-              ),
-              Row(
+              )),
+              Expanded(
+                  child: Row(
                 children: [
                   Icon(Icons.location_on, color: Colors.green, size: 16),
                   SizedBox(width: 5),
@@ -40,13 +42,14 @@ class TopBar extends StatelessWidget {
                     style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
                   ),
                 ],
-              ),
+              )),
             ],
           ),
-          CircleAvatar(
+          Expanded(
+              child: CircleAvatar(
             backgroundColor: Colors.grey.shade200,
             child: const Icon(Icons.notifications, color: Colors.black),
-          ),
+          )),
         ],
       ),
     );

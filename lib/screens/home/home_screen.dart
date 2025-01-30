@@ -3,6 +3,8 @@ import 'package:gevoul/components/bottom_nav_bar.dart';
 import 'package:gevoul/screens/home/components/body.dart';
 
 class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
+
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
